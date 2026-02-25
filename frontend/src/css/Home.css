@@ -1,0 +1,83 @@
+.category-card {
+  border-radius: 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.category-card:hover {
+  background-color: #f0f4f8;
+}
+.category-card.active {
+  background-color: #3f5d7d;
+  color: #fff;
+}
+
+.product-img {
+  height: 300px;         /* fixed height for uniform size */
+  width: 100%;           /* always fill card width */
+  object-fit: cover;     /* fill neatly by cropping */
+  border-radius: 8px;    /* optional for rounded corners */
+}
+
+
+.product-card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+}
+/* Discount Banner Section */
+.banner-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+  height: 280px;
+}
+
+.banner-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.banner-card:hover img {
+  transform: scale(1.1);
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #fff;
+  max-width: 70%;
+}
+
+.banner-content h5 {
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.banner-content p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.banner-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.banner-btn:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
